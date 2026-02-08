@@ -1,0 +1,39 @@
+baseURL = 'https://D0nsh.github.io/'
+languageCode = 'en-us'
+title = 'Don Shaked Algorithmic Consultant LLC'
+theme = 'PaperMod'
+
+[params]
+	defaultTheme = "auto"
+	ShowReadingTime = false
+	ShowShareButtons = false
+	ShowPostNavLinks = false
+	ShowBreadCrumbs = false
+	ShowCodeCopyButtons = true
+
+	[params.homeInfoParams]
+		Title = "Algorithmic Consulting & AI Solutions"
+		Content = """
+		Specializing in high-performance Computer Vision, Edge AI Optimization, and Generative Models.
+
+		Based in Medellín. Serving clients globally (US/Israel/EU).
+		"""
+
+	[[params.socialIcons]]
+		name = "github"
+		url = "https://github.com/D0nsh"
+	[[params.socialIcons]]
+		name = "email"
+		url = "mailto:contact@donshaked.com"
+
+[menu]
+	[[menu.main]]
+		identifier = "services"
+		name = "Services"
+		url = "/services/"
+		weight = 10
+	[[menu.main]]
+		identifier = "about"
+		name = "About"
+		url = "/about/"
+		weight = 20
