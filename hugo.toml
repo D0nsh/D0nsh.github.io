@@ -1,39 +1,130 @@
 baseURL = 'https://D0nsh.github.io/'
 languageCode = 'en-us'
-title = 'Don Shaked Algorithmic Consultant LLC'
+title = 'Don Shaked — Algorithmic Consultant'
 theme = 'PaperMod'
+copyright = '© 2026 Don Shaked Algorithmic Consultant LLC. All rights reserved.'
 
+enableEmoji = true
+buildDrafts = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# ---------------------------------------------------------------------------
+# Params
+# ---------------------------------------------------------------------------
 [params]
-	defaultTheme = "auto"
-	ShowReadingTime = false
-	ShowShareButtons = false
-	ShowPostNavLinks = false
-	ShowBreadCrumbs = false
-	ShowCodeCopyButtons = true
+  env = "production"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  disableScrollToTop = false
 
-	[params.homeInfoParams]
-		Title = "Algorithmic Consulting & AI Solutions"
-		Content = """
-		Specializing in high-performance Computer Vision, Edge AI Optimization, and Generative Models.
+  ShowReadingTime = false
+  ShowWordCount = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = false
+  ShowToc = false
+  hideMeta = true
+  hideAuthor = true
+  hideSummary = false
 
-		Based in Medellín. Serving clients globally (US/Israel/EU).
-		"""
+  author = "Don Shaked"
+  description = "Boutique algorithmic engineering — Computer Vision pipelines, Edge AI optimization, and Generative Model research for enterprise clients."
+  keywords = ["Computer Vision Consultant", "Edge AI", "Generative Models", "AI Consulting", "Algorithm Engineering", "MLOps", "Don Shaked"]
 
-	[[params.socialIcons]]
-		name = "github"
-		url = "https://github.com/D0nsh"
-	[[params.socialIcons]]
-		name = "email"
-		url = "mailto:contact@donshaked.com"
+  # -------------------------------------------------------------------------
+  # Profile Mode Homepage
+  # -------------------------------------------------------------------------
+  [params.profileMode]
+    enabled = true
+    title = "Don Shaked"
+    subtitle = """Algorithmic Engineering for Computer Vision, Edge AI & Generative Models.<br>\
+<span style="opacity:0.65; font-size:0.85em;">Boutique consulting for enterprise clients — US · Israel · EU</span>"""
+    imageUrl = "images/avatar.svg"
+    imageTitle = "Don Shaked — Algorithmic Consultant"
+    imageWidth = 180
+    imageHeight = 180
 
-[menu]
-	[[menu.main]]
-		identifier = "services"
-		name = "Services"
-		url = "/services/"
-		weight = 10
-	[[menu.main]]
-		identifier = "about"
-		name = "About"
-		url = "/about/"
-		weight = 20
+    [[params.profileMode.buttons]]
+      name = "Services"
+      url = "/services/"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+    [[params.profileMode.buttons]]
+      name = "Get in Touch"
+      url = "/contact/"
+
+  # -------------------------------------------------------------------------
+  # Nav Label
+  # -------------------------------------------------------------------------
+  [params.label]
+    text = "DS"
+
+  # -------------------------------------------------------------------------
+  # Favicon & Theming
+  # -------------------------------------------------------------------------
+  [params.assets]
+    favicon = "favicon.svg"
+    favicon16x16 = "favicon.svg"
+    favicon32x32 = "favicon.svg"
+    apple_touch_icon = "favicon.svg"
+    theme_color = "#0f172a"
+    msapplication_TileColor = "#0f172a"
+
+  # -------------------------------------------------------------------------
+  # SEO — Schema.org
+  # -------------------------------------------------------------------------
+  [params.schema]
+    publisherType = "Organization"
+    sameAs = [
+      "https://github.com/D0nsh",
+    ]
+
+  # -------------------------------------------------------------------------
+  # Footer
+  # -------------------------------------------------------------------------
+  [params.footer]
+    hideCopyright = false
+
+  # -------------------------------------------------------------------------
+  # Social Icons
+  # -------------------------------------------------------------------------
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/PLACEHOLDER"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/D0nsh"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@donshaked.com"
+
+# ---------------------------------------------------------------------------
+# Menu
+# ---------------------------------------------------------------------------
+[[menu.main]]
+  identifier = "services"
+  name = "Services"
+  url = "/services/"
+  weight = 10
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 20
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 30

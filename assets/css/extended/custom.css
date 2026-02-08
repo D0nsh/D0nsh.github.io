@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Don Shaked — Custom Styles (PaperMod Override)
+   Loaded automatically from assets/css/extended/
+   ========================================================================== */
+
+/* --- Root Variables ---------------------------------------------------- */
+:root {
+  --accent: #3b82f6;          /* Blue-500 — professional, trustworthy */
+  --accent-hover: #60a5fa;    /* Blue-400 */
+  --accent-subtle: rgba(59, 130, 246, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --radius: 10px;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+}
+
+/* Light mode overrides */
+[data-theme="light"] {
+  --accent-subtle: rgba(59, 130, 246, 0.06);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+}
+
+/* --- Typography -------------------------------------------------------- */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.011em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* --- Homepage Profile -------------------------------------------------- */
+.profile_inner h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.4rem;
+}
+
+.profile_inner .profileMode_subtitle {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+/* Avatar ring glow */
+.profile_inner img {
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-subtle), 0 8px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile_inner img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 8px var(--accent-subtle), 0 12px 40px rgba(0,0,0,0.2);
+}
+
+/* CTA Buttons */
+.profile_inner .button {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  margin: 0.35rem 0.3rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.profile_inner .button:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}
+
+/* --- Navigation -------------------------------------------------------- */
+.nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#theme-toggle {
+  cursor: pointer;
+}
+
+/* Nav brand text */
+header .logo a {
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+}
+
+/* --- Social Icons ------------------------------------------------------- */
+.social-icons a {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* --- Content Pages ----------------------------------------------------- */
+.post-content {
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.post-content h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.post-content h3 {
+  margin-top: 2rem;
+  color: var(--accent);
+}
+
+/* --- Tables (Services page) -------------------------------------------- */
+.post-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.post-content table th {
+  background: var(--accent-subtle);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.post-content table td {
+  padding: 0.8rem 1.1rem;
+  border-top: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+
+.post-content table tr:hover td {
+  background: var(--accent-subtle);
+}
+
+/* --- Cards & Grids ----------------------------------------------------- */
+.value-grid,
+.engagement-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.value-grid > p,
+.engagement-grid > p,
+.contact-grid > .contact-card {
+  background: var(--accent-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  margin: 0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.value-grid > p:hover,
+.engagement-grid > p:hover,
+.contact-grid > .contact-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.value-grid > p strong:first-child,
+.engagement-grid > p strong:first-child {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Contact Page ------------------------------------------------------ */
+.contact-page .contact-card {
+  background: var(--accent-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-page .contact-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.contact-page .contact-card p {
+  margin: 0.3rem 0;
+}
+
+/* --- Horizontal Rules -------------------------------------------------- */
+.post-content hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--border-subtle) 20%,
+    var(--accent-subtle) 50%,
+    var(--border-subtle) 80%,
+    transparent 100%
+  );
+  margin: 2.5rem 0;
+}
+
+/* --- Links ------------------------------------------------------------- */
+.post-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.post-content a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* --- Scroll to Top ----------------------------------------------------- */
+#top-link {
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* --- Footer ------------------------------------------------------------ */
+.footer {
+  opacity: 0.7;
+  font-size: 0.82rem;
+}
+
+/* --- Responsive -------------------------------------------------------- */
+@media (max-width: 768px) {
+  .profile_inner h1 {
+    font-size: 2rem;
+  }
+
+  .profile_inner .profileMode_subtitle {
+    font-size: 0.95rem;
+  }
+
+  .value-grid,
+  .engagement-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Subtle entrance animation ----------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile_inner,
+.post-content {
+  animation: fadeInUp 0.5s ease-out;
+}
