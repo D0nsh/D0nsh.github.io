@@ -35,14 +35,6 @@ The best projects start with a conversation. Whether you have a well-defined pro
 
 </div>
 
-<div class="contact-card">
-
-**🐙 GitHub**
-[github.com/D0nsh](https://github.com/D0nsh)
-*Open-source work and technical discussions.*
-
-</div>
-
 </div>
 
 ---

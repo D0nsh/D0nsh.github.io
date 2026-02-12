@@ -88,7 +88,6 @@ buildDrafts = false
   [params.schema]
     publisherType = "Organization"
     sameAs = [
-      "https://github.com/D0nsh",
       "https://www.linkedin.com/in/don-shaked",
     ]
 
@@ -104,9 +103,6 @@ buildDrafts = false
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/don-shaked"
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/D0nsh"
   [[params.socialIcons]]
     name = "email"
     url = "mailto:donshaked@gmail.com"
