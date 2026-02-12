@@ -9,7 +9,7 @@ hideMeta: true
 
 <div class="about-hero">
 
-## The Firm
+## Who We Are
 
 **Don Shaked Algorithmic Consultant LLC** is a boutique engineering practice that turns cutting-edge AI research into production-grade systems.
 
@@ -21,9 +21,9 @@ We work at the intersection of **mathematical rigor** and **shipping code** — 
 
 ### The Principal
 
-Don Shaked is a **Senior Algorithmic Engineer** with deep roots in the Israeli defense-tech and computer-vision ecosystem. Over the past decade he has designed and shipped vision systems that run in environments where failure is not an option — from real-time surveillance to mobile edge devices.
+Don Shaked is a **Senior Algorithmic Engineer** with deep roots in the Israeli defense-tech and computer-vision ecosystem. He has designed and shipped vision systems for environments where failure is not an option — real-time surveillance, mobile edge devices, and industrial inspection at scale.
 
-His specialization: the "hard" problems that pre-trained models and AutoML cannot solve. When accuracy requirements are non-negotiable, latency budgets are measured in milliseconds, and the hardware is fixed — that's where we come in.
+His focus: the **"hard" problems** that pre-trained models and AutoML cannot solve. When accuracy requirements are non-negotiable, latency budgets are measured in milliseconds, and the hardware is fixed — that's where we come in.
 
 ---
 
@@ -31,11 +31,14 @@ His specialization: the "hard" problems that pre-trained models and AutoML canno
 
 We don't just *run* models — **we engineer them**.
 
-| Capability | Details |
-|:---|:---|
-| **Research & Prototyping** | Python · PyTorch · OpenCV · NumPy |
-| **Production & Mobile** | Kotlin · Android · ONNX Runtime · TensorRT |
-| **Philosophy** | Mathematical correctness first, then memory efficiency, then inference speed |
+<div class="service-details">
+
+- **Research & Prototyping** — Python · PyTorch · OpenCV · NumPy
+- **Production & Mobile** — Kotlin · Android · ONNX Runtime · TensorRT
+- **LLM & GenAI** — RAG pipelines · Fine-tuning · Self-hosted inference
+- **Philosophy** — Mathematical correctness first, then memory efficiency, then inference speed
+
+</div>
 
 ---
 
@@ -50,7 +53,7 @@ We take on a small number of engagements at a time. Every project receives princ
 We bridge the gap between what works in a Jupyter notebook and what works at 30 fps on a $50 device.
 
 **🌐 Global, Lean Operations**
-Headquartered in the US with operations in Medellín, Colombia — providing seamless EST/CST time-zone overlap for American and Israeli clients at competitive rates.
+Headquartered in the US with operations in Medellín, Colombia — seamless EST/CST overlap for American and Israeli clients at competitive rates.
 
 </div>
 

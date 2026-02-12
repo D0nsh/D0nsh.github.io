@@ -2,7 +2,7 @@ baseURL = 'https://D0nsh.github.io/'
 languageCode = 'en-us'
 title = 'Don Shaked — Algorithmic Consultant'
 theme = 'PaperMod'
-copyright = '© 2026 Don Shaked Algorithmic Consultant LLC. All rights reserved.'
+copyright = '© 2025 Don Shaked Algorithmic Consultant LLC. All rights reserved.'
 
 enableEmoji = true
 buildDrafts = false
@@ -39,8 +39,8 @@ buildDrafts = false
   hideSummary = false
 
   author = "Don Shaked"
-  description = "Boutique algorithmic engineering — Computer Vision pipelines, Edge AI optimization, and Generative Model research for enterprise clients."
-  keywords = ["Computer Vision Consultant", "Edge AI", "Generative Models", "AI Consulting", "Algorithm Engineering", "MLOps", "Don Shaked"]
+  description = "Boutique algorithmic engineering — Computer Vision, Edge AI, Generative Models, and LLM solutions for enterprise clients."
+  keywords = ["Computer Vision Consultant", "Edge AI", "Generative Models", "AI Consulting", "Algorithm Engineering", "LLM", "RAG", "Don Shaked"]
 
   # -------------------------------------------------------------------------
   # Profile Mode Homepage
@@ -48,9 +48,9 @@ buildDrafts = false
   [params.profileMode]
     enabled = true
     title = "Don Shaked"
-    subtitle = """Algorithmic Engineering for Computer Vision, Edge AI & Generative Models.<br>\
-<span style="opacity:0.65; font-size:0.85em;">Boutique consulting for enterprise clients — US · Israel · EU</span>"""
-    imageUrl = "images/avatar.svg"
+    subtitle = """Production-grade Computer Vision · Edge AI · Generative Models & LLMs.<br>\
+<span style="opacity:0.65; font-size:0.85em;">Boutique algorithmic consulting for enterprise clients — US · Israel · EU</span>"""
+    imageUrl = "images/profile.jpeg"
     imageTitle = "Don Shaked — Algorithmic Consultant"
     imageWidth = 180
     imageHeight = 180
@@ -89,6 +89,7 @@ buildDrafts = false
     publisherType = "Organization"
     sameAs = [
       "https://github.com/D0nsh",
+      "https://www.linkedin.com/in/don-shaked",
     ]
 
   # -------------------------------------------------------------------------
@@ -102,13 +103,13 @@ buildDrafts = false
   # -------------------------------------------------------------------------
   [[params.socialIcons]]
     name = "linkedin"
-    url = "https://linkedin.com/in/PLACEHOLDER"
+    url = "https://www.linkedin.com/in/don-shaked"
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/D0nsh"
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:contact@donshaked.com"
+    url = "mailto:donshaked@gmail.com"
 
 # ---------------------------------------------------------------------------
 # Menu

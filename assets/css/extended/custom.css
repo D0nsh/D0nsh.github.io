@@ -253,6 +253,61 @@ header .logo a {
   box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
 }
 
+/* --- Service Details Lists --------------------------------------------- */
+.service-details {
+  margin: 1.2rem 0 1.5rem;
+}
+
+.service-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-details li {
+  position: relative;
+  padding: 0.85rem 1.2rem 0.85rem 1.6rem;
+  margin: 0;
+  border-left: 2px solid var(--accent);
+  background: var(--accent-subtle);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.service-details li:hover {
+  border-left-color: var(--accent-hover);
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.service-details li strong {
+  color: var(--accent);
+}
+
+/* --- Services Intro ---------------------------------------------------- */
+.services-intro {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+/* --- About Hero -------------------------------------------------------- */
+.about-hero {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* --- "Typical outcome" styling ----------------------------------------- */
+.post-content > p > strong:first-child {
+  color: var(--accent);
+}
+
+/* --- Profile photo (real photo) ---------------------------------------- */
+.profile_inner img {
+  object-fit: cover;
+  object-position: center top;
+}
+
 /* --- Footer ------------------------------------------------------------ */
 .footer {
   opacity: 0.7;
@@ -273,6 +328,10 @@ header .logo a {
   .engagement-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-details li {
+    padding: 0.7rem 1rem 0.7rem 1.2rem;
   }
 }
 
